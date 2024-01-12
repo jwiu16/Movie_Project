@@ -71,6 +71,7 @@ public class AdminController {
 	JoinService join;
 	
 	
+	
 	// 메인 페이지로 이동하기
 	@GetMapping("adminMain")
 	public String adminMain(HttpSession session, Model model) {
@@ -82,6 +83,8 @@ public class AdminController {
 		}
 		
 		return "admin/admin_main";
+	
+		
 	}
 	
 	// 차트를 만들기 위해 회원정보 불러오기
